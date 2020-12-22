@@ -1,8 +1,0 @@
-/root/Dev/RiderProjects/md/md/bin/Release/net48/md.exe.config
-/root/Dev/RiderProjects/md/md/bin/Release/net48/md.exe
-/root/Dev/RiderProjects/md/md/bin/Release/net48/md.pdb
-/root/Dev/RiderProjects/md/md/obj/Release/net48/md.AssemblyInfoInputs.cache
-/root/Dev/RiderProjects/md/md/obj/Release/net48/md.AssemblyInfo.cs
-/root/Dev/RiderProjects/md/md/obj/Release/net48/md.csproj.CoreCompileInputs.cache
-/root/Dev/RiderProjects/md/md/obj/Release/net48/md.exe
-/root/Dev/RiderProjects/md/md/obj/Release/net48/md.pdb
