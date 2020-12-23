@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.8": {
+      "GnuPlotSharp/1.1.6756.26087": {
+        "type": "package",
+        "compile": {
+          "lib/net452/GnuPlotSharp.exe": {}
+        },
+        "runtime": {
+          "lib/net452/GnuPlotSharp.exe": {}
+        },
+        "build": {
+          "build/GnuPlotSharp.targets": {}
+        }
+      },
       "Microsoft.NETFramework.ReferenceAssemblies/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -17,6 +29,56 @@
     }
   },
   "libraries": {
+    "GnuPlotSharp/1.1.6756.26087": {
+      "sha512": "UeVf+DsWk+HSP+ru8XdXifROb/Q/YxOOtdU6bjsdsZOTigHK89dExpVtbMKnFZCKOZfNsAHCh52Z7BWqu1nQvw==",
+      "type": "package",
+      "path": "gnuplotsharp/1.1.6756.26087",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/GnuPlotSharp.targets",
+        "build/gnuplot/Qt5Core.dll",
+        "build/gnuplot/Qt5Gui.dll",
+        "build/gnuplot/Qt5Network.dll",
+        "build/gnuplot/Qt5PrintSupport.dll",
+        "build/gnuplot/Qt5Svg.dll",
+        "build/gnuplot/Qt5Widgets.dll",
+        "build/gnuplot/gnuplot.exe",
+        "build/gnuplot/gnuplot_qt.exe",
+        "build/gnuplot/libcaca-0.dll",
+        "build/gnuplot/libcairo-2.dll",
+        "build/gnuplot/libexpat-1.dll",
+        "build/gnuplot/libffi-6.dll",
+        "build/gnuplot/libfontconfig-1.dll",
+        "build/gnuplot/libfreetype-6.dll",
+        "build/gnuplot/libgcc_s_seh-1.dll",
+        "build/gnuplot/libgd-3.dll",
+        "build/gnuplot/libglib-2.0-0.dll",
+        "build/gnuplot/libgobject-2.0-0.dll",
+        "build/gnuplot/libiconv-2.dll",
+        "build/gnuplot/libintl-8.dll",
+        "build/gnuplot/libjpeg-9.dll",
+        "build/gnuplot/libpango-1.0-0.dll",
+        "build/gnuplot/libpangocairo-1.0-0.dll",
+        "build/gnuplot/libpangowin32-1.0-0.dll",
+        "build/gnuplot/libpixman-1-0.dll",
+        "build/gnuplot/libpng16-16.dll",
+        "build/gnuplot/libstdc++-6.dll",
+        "build/gnuplot/lua53.dll",
+        "build/gnuplot/wgnuplot-ja.chm",
+        "build/gnuplot/wgnuplot-ja.mnu",
+        "build/gnuplot/wgnuplot.chm",
+        "build/gnuplot/wgnuplot.exe",
+        "build/gnuplot/wgnuplot.mnu",
+        "build/gnuplot/wgnuplot_pipes.exe",
+        "build/gnuplot/wxbase30u_gcc_custom.dll",
+        "build/gnuplot/wxmsw30u_core_gcc_custom.dll",
+        "build/gnuplot/zlib1.dll",
+        "gnuplotsharp.1.1.6756.26087.nupkg.sha512",
+        "gnuplotsharp.nuspec",
+        "lib/net452/GnuPlotSharp.exe"
+      ]
+    },
     "Microsoft.NETFramework.ReferenceAssemblies/1.0.0": {
       "sha512": "7D2TMufjGiowmt0E941kVoTIS+GTNzaPopuzM1/1LSaJAdJdBrVP0SkZW7AgDd0a2U1DjsIeaKG1wxGVBNLDMw==",
       "type": "package",
@@ -411,6 +473,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
+      "GnuPlotSharp >= 1.1.6756.26087",
       "Microsoft.NETFramework.ReferenceAssemblies >= 1.0.0"
     ]
   },
@@ -451,6 +514,10 @@
       "net48": {
         "targetAlias": "net48",
         "dependencies": {
+          "GnuPlotSharp": {
+            "target": "Package",
+            "version": "[1.1.6756.26087, )"
+          },
           "Microsoft.NETFramework.ReferenceAssemblies": {
             "suppressParent": "All",
             "target": "Package",

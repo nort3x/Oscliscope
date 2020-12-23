@@ -22,7 +22,7 @@ namespace md.Analyzer
                    Xi += 0.0049*p.data[j]*Complex.Exp(new Complex(0,2*Math.PI*i*j/p.data.Length));
                }
                atomlist[i].Amp = 2 * Xi.Magnitude;
-               atomlist[i].Phase = Xi.Phase;
+               atomlist[i].Phase = Xi.Phase - Math.PI;
                atomlist[i].Frequency = (i / p.te) * 1000000; // because its micro (sorry for gunshot)
            }
            return new FrequencyDomainPacket(ref atomlist);
