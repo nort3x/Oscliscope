@@ -22,33 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee98baca-1155-4633-8474-998bffba05e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/md/FlowControl/Grapher.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/md/FlowControl/Main.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.md/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.md/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.md/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.md/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.md/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.md/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/Analyzer/DFT.cs" beforeDir="false" afterPath="$PROJECT_DIR$/md/Analyzer/DFT.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/Com.cs" beforeDir="false" afterPath="$PROJECT_DIR$/md/Com.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/md/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/bin/Debug/net48/md.exe" beforeDir="false" afterPath="$PROJECT_DIR$/md/bin/Debug/net48/md.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/bin/Debug/net48/md.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/md/bin/Debug/net48/md.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/md.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/md/md.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/obj/Debug/net48/md.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/md/obj/Debug/net48/md.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/obj/Debug/net48/md.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/md/obj/Debug/net48/md.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/obj/Debug/net48/md.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/md/obj/Debug/net48/md.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/obj/Debug/net48/md.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/md/obj/Debug/net48/md.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/obj/Debug/net48/md.exe" beforeDir="false" afterPath="$PROJECT_DIR$/md/obj/Debug/net48/md.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/obj/Debug/net48/md.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/md/obj/Debug/net48/md.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/obj/Release/net48/md.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/md/obj/Release/net48/md.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/obj/Release/net48/md.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/md/obj/Release/net48/md.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/obj/md.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/md/obj/md.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/obj/md.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/md/obj/md.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/md/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/md/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/md/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/md/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/md/obj/rider.project.restore.info" afterDir="false" />
-    </list>
+    <list default="true" id="ee98baca-1155-4633-8474-998bffba05e1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,6 +113,7 @@
       <workItem from="1608731616147" duration="1803000" />
       <workItem from="1608734363848" duration="1933000" />
       <workItem from="1608749761924" duration="3225000" />
+      <workItem from="1608753682538" duration="182000" />
     </task>
     <servers />
   </component>
@@ -241,23 +216,6 @@
     <state x="345" y="178" key="run.anything.popup/0.31.1366.737@0.31.1366.737" timestamp="1608660382325" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/md/Com.cs</url>
-          <line>105</line>
-          <properties documentPath="$PROJECT_DIR$/md/Com.cs" initialLine="105">
-            <startOffsets>
-              <option value="3089" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3098" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Type#md.Objects.Packet" memberName="te" />
