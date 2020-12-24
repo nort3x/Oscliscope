@@ -34,8 +34,14 @@ namespace md.Objects
             return mode;
         }
         
-        
-        private FourierCoffAtom getDominantMode(FourierCoffAtom[] fca)
+        public void normalize(){
+            FourierCoffAtom h = getDominantMode(fca);
+            for(int i=1;i<fca.Length;i++){
+                fca[i].Amp/=h.Amp;
+            }
+        }
+
+        public FourierCoffAtom getDominantMode(FourierCoffAtom[] fca)
         {
             FourierCoffAtom mode = fca[1];
             for (int i = 2; i < fca.Length; i++)

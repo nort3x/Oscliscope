@@ -3,9 +3,11 @@
   using System.IO.Ports;
   using System.Linq;
   using System.Timers;
+  using GLib;
   using md.Analyzer;
   using md.FlowControl;
   using md.Objects;
+  using Thread = System.Threading.Thread;
 
   namespace md
   {
@@ -27,10 +29,20 @@
               // // populater.te = 1000000;
               // var f= DFT.getDFTOfTimePacket(populater);
               //
-              
-              Com c = new Com(SerialName,115200);
-              new Main(c).Run();
+              Begin:
+              try
+              {
 
+                  Com c = new Com(SerialName, 115200);
+                  new Main(c).Run();
+
+              }
+              catch
+              {
+                  Console.WriteLine("cannot establish serial connection");
+                  Thread.Sleep(5000);
+                  goto Begin;
+              }
           }
       }
   }

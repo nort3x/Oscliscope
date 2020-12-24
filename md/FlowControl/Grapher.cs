@@ -34,6 +34,7 @@ namespace md.FlowControl
         }
         private void writeFPacketTofile(FrequencyDomainPacket fp)
         {
+            fp.normalize();
             StringBuilder s = new StringBuilder();
             for (int i = 1; i < fp.fca.Length; i++)
             {
@@ -43,8 +44,6 @@ namespace md.FlowControl
             
             File.WriteAllText("freq"+id+".dat",s.ToString());
         }
-
-
         
 
         public void toggleTimeDomain()
@@ -82,10 +81,21 @@ namespace md.FlowControl
                 {
                     while (fd)
                     {
-                        if (pool.TryPeek(out qf))
+                        if (td)
                         {
-                            writeFPacketTofile(DFT.getDFTOfTimePacket(qf));    
+                            if (pool.TryPeek(out qf))
+                            {
+                                writeFPacketTofile(DFT.getDFTOfTimePacket(qf));    
+                            }   
                         }
+                        else
+                        {
+                            if (pool.TryDequeue(out qf))
+                            {
+                                writeFPacketTofile(DFT.getDFTOfTimePacket(qf));
+                            }
+                        }
+                        
                         
                     }
                     

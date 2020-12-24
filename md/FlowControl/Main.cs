@@ -7,14 +7,15 @@ namespace md.FlowControl
         private Com com;
         private Grapher grapher;
         private const String banner = "h help \t\t show this banner\n" +
-                                      "q exit \t\t exit program" +
-                                      "" +
-                                      "" +
-                                      "";
+                                      "q exit \t\t exit program\n" +
+                                      "t time \t\t start probing time domain signal\n" +
+                                      "f freq \t\t start probing frequency domain singanl\n" +
+                                      "qos \t\t checking quality of serial connection\n"+
+                                      "command <command2send> \t\t send command to Arduino\n";
         public Main(Com comobject)
         {
             com = comobject;
-            grapher = new Grapher(ref com.getPool());
+            grapher = new Grapher(ref com.getPool()); // for first channel
         }
 
         public void Run()
@@ -48,6 +49,16 @@ namespace md.FlowControl
                 else if (cmd == "freq")
                 {
                     grapher.toggleFreqDomain();
+                }
+                
+                else if (cmd.Contains("command"))
+                {
+                    cmd = cmd.Replace("command ", "");
+                    com.sendCommand(cmd);
+                }
+                else if (cmd == "qos")
+                {
+                    Console.Write("Number of malformed received packets: "+com.getNumberOferrs()+"\n");
                 }
             }
         }

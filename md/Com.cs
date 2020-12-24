@@ -60,7 +60,9 @@ namespace md
                     if (s.ReadByte() == 9);        // begin flag
                         goto CAPA;
                 }
+                NumberOfErr++;
                 throw new Exception("REACHED the UPP limit of nonsense");
+                
                 
                 CAPA:
                 if (sp.ReadByte() == 15)
@@ -72,7 +74,7 @@ namespace md
                     }
                     catch (Exception e)
                     {
-                        Console.Write("");
+                        NumberOfErr++;
                         continue; // if couldnot convert just continue
                     }
 
@@ -105,6 +107,10 @@ namespace md
                             {
                                 return p;
                             }
+                            else
+                            {
+                                NumberOfErr++;
+                            }
                         }
                     }
                 }
@@ -115,6 +121,11 @@ namespace md
         public ref ConcurrentQueue<Packet> getPool()
         {
             return ref pool;
+        }
+
+        public void sendCommand(String command)
+        {
+            s.WriteLine(command);
         }
 
         public int getNumberOferrs()
