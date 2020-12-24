@@ -24,7 +24,7 @@ void setup() {
   }
 
 
-const int o = 600; // change this number for wider sample
+const int o = 650; // change this number for wider sample
 int data[o];
 double te;
 

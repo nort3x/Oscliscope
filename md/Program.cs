@@ -19,13 +19,14 @@
               // int[] data = new int[500];
               // for (int i = 0; i < 500; i++)
               // {
-              //     data[i] = (int)(Math.Sin(2 * Math.PI * i / 500)*1024);
+              //     data[i] = (int)(Math.Sin(2 * Math.PI*i/500)*1024);
               // }
               // //Packet populater = tester.populater.getPacket(500);
-              // Packet populater = new Packet();
-              // populater.data = data;
-              // populater.te = 1000000;
+              // // Packet populater = new Packet();
+              // // populater.data = data;
+              // // populater.te = 1000000;
               // var f= DFT.getDFTOfTimePacket(populater);
+              //
               
               Com c = new Com(SerialName,115200);
               new Main(c).Run();

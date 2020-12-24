@@ -19,7 +19,7 @@ namespace md.Analyzer
                Xi = new Complex(0,0);
                for (int j = 0; j < p.data.Length-1; j++)
                {
-                   Xi += 0.0049*p.data[j]*Complex.Exp(new Complex(0,2*Math.PI*i*j/p.data.Length));
+                   Xi += 0.00488*p.data[j]*Complex.Exp(new Complex(0,2*Math.PI*i*j/p.data.Length));
                }
                atomlist[i].Amp = 2 * Xi.Magnitude;
                atomlist[i].Phase = Xi.Phase - Math.PI;
