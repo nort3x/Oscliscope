@@ -3,47 +3,6 @@
   <component name="ContentModelStore">
     <e p="$USER_HOME$/.cache/JetBrains/Rider2020.2/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/.cache/JetBrains/Rider2020.2/resharper-host/local/Transient/Rider/v202/SolutionCaches/_md.-1415820464.00" t="ExcludeRecursive" />
-    <e p="$USER_HOME$/.nuget/packages/gnuplotsharp/1.1.6756.26087/build" t="Include">
-      <e p="gnuplot" t="Include">
-        <e p="Qt5Core.dll" t="Include" />
-        <e p="Qt5Gui.dll" t="Include" />
-        <e p="Qt5Network.dll" t="Include" />
-        <e p="Qt5PrintSupport.dll" t="Include" />
-        <e p="Qt5Svg.dll" t="Include" />
-        <e p="Qt5Widgets.dll" t="Include" />
-        <e p="gnuplot.exe" t="Include" />
-        <e p="gnuplot_qt.exe" t="Include" />
-        <e p="libcaca-0.dll" t="Include" />
-        <e p="libcairo-2.dll" t="Include" />
-        <e p="libexpat-1.dll" t="Include" />
-        <e p="libffi-6.dll" t="Include" />
-        <e p="libfontconfig-1.dll" t="Include" />
-        <e p="libfreetype-6.dll" t="Include" />
-        <e p="libgcc_s_seh-1.dll" t="Include" />
-        <e p="libgd-3.dll" t="Include" />
-        <e p="libglib-2.0-0.dll" t="Include" />
-        <e p="libgobject-2.0-0.dll" t="Include" />
-        <e p="libiconv-2.dll" t="Include" />
-        <e p="libintl-8.dll" t="Include" />
-        <e p="libjpeg-9.dll" t="Include" />
-        <e p="libpango-1.0-0.dll" t="Include" />
-        <e p="libpangocairo-1.0-0.dll" t="Include" />
-        <e p="libpangowin32-1.0-0.dll" t="Include" />
-        <e p="libpixman-1-0.dll" t="Include" />
-        <e p="libpng16-16.dll" t="Include" />
-        <e p="libstdc++-6.dll" t="Include" />
-        <e p="lua53.dll" t="Include" />
-        <e p="wgnuplot-ja.chm" t="Include" />
-        <e p="wgnuplot-ja.mnu" t="Include" />
-        <e p="wgnuplot.chm" t="Include" />
-        <e p="wgnuplot.exe" t="Include" />
-        <e p="wgnuplot.mnu" t="Include" />
-        <e p="wgnuplot_pipes.exe" t="Include" />
-        <e p="wxbase30u_gcc_custom.dll" t="Include" />
-        <e p="wxmsw30u_core_gcc_custom.dll" t="Include" />
-        <e p="zlib1.dll" t="Include" />
-      </e>
-    </e>
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="md" t="IncludeRecursive">
         <e p="Analyzer" t="Include">
@@ -62,7 +21,13 @@
         <e p="Program.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="md.csproj" t="IncludeRecursive" />
-        <e p="obj" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Release" t="Include">
+            <e p="net48" t="Include">
+              <e p="md.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="tester" t="Include">
           <e p="populater.cs" t="Include" />
         </e>

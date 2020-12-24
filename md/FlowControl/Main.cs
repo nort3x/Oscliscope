@@ -19,9 +19,12 @@ namespace md.FlowControl
 
         public void Run()
         {
+            
+            Console.WriteLine(banner);
             String cmd;
             while (true)
             {
+                Console.Write("#> ");
                 cmd = Console.In.ReadLine();
 
 
@@ -30,11 +33,21 @@ namespace md.FlowControl
                     Console.Write(banner + "\n");
                 }
                 
-                if (cmd == "exit" || cmd == "q")
+                else if (cmd == "exit" || cmd == "q")
                 {
                     com.end();
                     grapher.end();
                     break;
+                }
+                
+                else if (cmd == "time")
+                {
+                    grapher.toggleTimeDomain();
+                }
+                
+                else if (cmd == "freq")
+                {
+                    grapher.toggleFreqDomain();
                 }
             }
         }

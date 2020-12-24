@@ -4,6 +4,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO.Ports;
 using System.Threading;
+using System.Xml;
 using md.Objects;
 
 namespace md
@@ -14,6 +15,7 @@ namespace md
     
     public class Com
     {
+        private int NumberOfErr = 0;
 
         private SerialPort s;
         private ConcurrentQueue<Packet> pool;
@@ -48,7 +50,6 @@ namespace md
         private Packet readPacket(SerialPort sp)
         {
             Packet p =  new Packet();
-            int buff;
             int n;
             int UPTO = 1000000;
             while (true)
@@ -66,14 +67,12 @@ namespace md
                 {
                     try
                     {
-                        String q = sp.ReadLine();
-                        Console.WriteLine(q);
-                        p.te = Convert.ToDouble(q); // try to read field value te
+                        p.te = Convert.ToDouble(sp.ReadLine()); // try to read field value te
 
                     }
                     catch (Exception e)
                     {
-                        int k = 1;
+                        Console.Write("");
                         continue; // if couldnot convert just continue
                     }
 
@@ -85,6 +84,7 @@ namespace md
                         }
                         catch (Exception e)
                         {
+                            NumberOfErr++;
                             continue;
                         }
 
@@ -117,9 +117,14 @@ namespace md
             return ref pool;
         }
 
+        public int getNumberOferrs()
+        {
+            return NumberOfErr;
+        }
+
         public void end()
         {
-            throw new NotImplementedException();
+            run = false;
         }
     }
 }

@@ -24,7 +24,7 @@ void setup() {
   }
 
 
-const int o = 20; // change this number for wider sample
+const int o = 600; // change this number for wider sample
 int data[o];
 double te;
 
@@ -46,6 +46,7 @@ void SendData(int* data,int n, double te){
    }
   
   Serial.write(byte(14));    // end flag
+  Serial.println();
   
   }
 

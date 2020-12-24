@@ -4,6 +4,7 @@
   using System.Linq;
   using System.Timers;
   using md.Analyzer;
+  using md.FlowControl;
   using md.Objects;
 
   namespace md
@@ -27,6 +28,7 @@
               // var f= DFT.getDFTOfTimePacket(populater);
               
               Com c = new Com(SerialName,115200);
+              new Main(c).Run();
 
           }
       }
