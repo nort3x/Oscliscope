@@ -14,5 +14,5 @@ set linetype 1 lc rgb 'white'
 
 
 plot "g.dat" using 1:2 w l
-pause 0.01
+pause 0.1
 reread
